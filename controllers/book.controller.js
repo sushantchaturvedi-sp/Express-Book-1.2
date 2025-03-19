@@ -12,7 +12,7 @@ exports.getAllBooks = (req, res,) => {
     if (title) {
         filteredBooks = filteredBooks.filter(book => book.title === title);
     }
-    res.status(200).json(Object.values(filteredBooks));
+    res.status(200).json(filteredBooks);
 };
 
 
