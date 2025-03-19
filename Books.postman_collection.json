@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "64ca6ef5-f560-4ca6-9d4c-b4c2d83ab461",
+		"name": "Books",
+		"description": "Books API's!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43048314"
+	},
+	"item": [
+		{
+			"name": "Get all Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Books}}/books"
+			},
+			"response": [
+				{
+					"name": "Get all Books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3040/books"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"author\": \"Chinua Achebe\",\r\n        \"title\": \"Things Fall Apart\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Hans Christian Andersen\",\r\n        \"title\": \"Fairy tales\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Dante Alighieri\",\r\n        \"title\": \"The Divine Comedy\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Unknown\",\r\n        \"title\": \"The Epic Of Gilgamesh\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Unknown\",\r\n        \"title\": \"The Book Of Job\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Unknown\",\r\n        \"title\": \"One Thousand and One Nights\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Unknown\",\r\n        \"title\": \"Njál's Saga\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Jane Austen\",\r\n        \"title\": \"Pride and Prejudice\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Honoré de Balzac\",\r\n        \"title\": \"Le Père Goriot\",\r\n        \"reviews\": {}\r\n    },\r\n    {\r\n        \"author\": \"Samuel Beckett\",\r\n        \"title\": \"Molloy, Malone Dies, The Unnamable, the trilogy\",\r\n        \"reviews\": {}\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Book by Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Books}}/books/title/Things Fall Apart"
+			},
+			"response": [
+				{
+					"name": "Get Book by Title",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Books}}/books/title/Things Fall Apart"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"author\": \"Chinua Achebe\",\r\n        \"title\": \"Things Fall Apart\",\r\n        \"reviews\": {}\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Book by Author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Books}}/books/author/Samuel Beckett"
+			},
+			"response": [
+				{
+					"name": "Get Book by Author",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Books}}/books/author/Samuel Beckett"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"author\": \"Samuel Beckett\",\r\n        \"title\": \"Molloy, Malone Dies, The Unnamable, the trilogy\",\r\n        \"reviews\": {}\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Book by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Books}}/books/4"
+			},
+			"response": [
+				{
+					"name": "Get Book by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Books}}/books/4"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"author\": \"Unknown\",\r\n    \"title\": \"The Epic Of Gilgamesh\",\r\n    \"reviews\": {}\r\n}"
+				}
+			]
+		},
+		{
+			"name": "Get books Review",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Books}}/books/2/reviews"
+			},
+			"response": [
+				{
+					"name": "Get books Review",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Books}}/books/2/reviews"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": null,
+					"cookie": [],
+					"body": "{}"
+				}
+			]
+		}
+	]
+}
