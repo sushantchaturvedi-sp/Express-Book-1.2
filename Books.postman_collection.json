@@ -35,7 +35,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{Books}}/books/title/Things Fall Apart"
+				"url": {
+					"raw": "{{Books}}/books?title=Things Fall Apart",
+					"host": [
+						"{{Books}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Things Fall Apart"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -43,7 +57,21 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "{{Books}}/books/title/Things Fall Apart"
+						"url": {
+							"raw": "{{Books}}/books?title=Things Fall Apart",
+							"host": [
+								"{{Books}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Things Fall Apart"
+								}
+							]
+						}
 					},
 					"code": 200,
 					"_postman_previewlanguage": "JSON",
@@ -58,7 +86,21 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{Books}}/books/author/Samuel Beckett"
+				"url": {
+					"raw": "{{Books}}/books?author=Samuel Beckett",
+					"host": [
+						"{{Books}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "Samuel Beckett"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -66,7 +108,21 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "{{Books}}/books/author/Samuel Beckett"
+						"url": {
+							"raw": "{{Books}}/books?author=Samuel Beckett",
+							"host": [
+								"{{Books}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "Samuel Beckett"
+								}
+							]
+						}
 					},
 					"code": 200,
 					"_postman_previewlanguage": "JSON",
